@@ -4,7 +4,7 @@ import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 const TARGET_LABEL = '23 April 2026, 16:20 CET/CEST';
 const TARGET_TIME_UTC = Date.parse('2026-04-23T14:20:00.000Z');
 const FIREWORKS_EMBED_URL =
-  'https://www.youtube-nocookie.com/embed/5hIgnDMp3EI?autoplay=1&mute=1&rel=0';
+  'https://www.youtube.com/watch?v=2OLC51rzLSI?autoplay=1&mute=1&rel=0';
 
 function pad(value) {
   return String(value).padStart(2, '0');
