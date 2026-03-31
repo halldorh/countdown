@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 
-const TARGET_LABEL = '23 April 2026, 16:20 CET/CEST';
-const TARGET_TIME_UTC = Date.parse('2026-04-23T14:20:00.000Z');
+const TARGET_LABEL = '8 October 2026, 20:00 GMT';
+const TARGET_TIME_UTC = Date.parse('2026-10-08T20:00:00.000Z');
 const FIREWORKS_EMBED_URL =
   'https://www.youtube.com/watch?v=2OLC51rzLSI?autoplay=1&mute=1&rel=0';
 
@@ -54,7 +54,7 @@ function App() {
   return (
     React.createElement('main', { className: 'app' },
       React.createElement('section', { className: 'panel' },
-        React.createElement('h1', { className: 'message' }, 'Tími þangað til Monique og Pabbi hittast aftur!'),
+        React.createElement('h1', { className: 'message' }, 'Pabbi leggur af stað til Frakklands!'),
         React.createElement('p', { className: 'countdown', 'aria-live': 'polite' }, statusText),
         React.createElement('p', { className: 'caption' }, TARGET_LABEL),
         timeLeft.complete && React.createElement('div', { className: 'video-wrap' },
