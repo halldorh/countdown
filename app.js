@@ -18,11 +18,16 @@ function getTimeLeft() {
   const hours = Math.floor((totalSeconds % 86400) / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
+  const months = Math.floor(days / 31);
+  const remainingDays = days % 31;
+  const dayText = months > 0
+    ? `${months} mánuðir ${remainingDays} dagar`
+    : `${days} dagar`;
 
   return {
     complete: difference === 0,
     parts: [days, hours, minutes, seconds],
-    text: `${days} dagar ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`,
+    text: `${dayText} ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`,
   };
 }
 
